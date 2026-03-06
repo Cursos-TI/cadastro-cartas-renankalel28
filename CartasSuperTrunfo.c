@@ -3,7 +3,7 @@
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
-
+//nivel aventureiro - acrescentar as propriedades: densidadde populacional e pib per capita.
 int main() {
 
 //carta 1
@@ -35,7 +35,9 @@ int main() {
 // o usuario digita o numero de pontos turisticos da cidade escolhida
     printf("Digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &PTUR1);
-// o programa imprimi/mostra as informaçoes fornecidas pelo usuario para a carta 1
+    float densidadePopulacional1 = habitantes1 / Area1; // calculando a densidade populacional
+    float pibPerCapita1 = PIB1 / habitantes1; // calculando o PIB per capita
+// o programa imprime/mostra as informaçoes fornecidas pelo usuario para a carta 1
     printf("\nCARTA 1\n");
     printf("Estado: %c\n", estadoEscolhido1);
     printf("Codigo do estado: %d %c\n", numero1, estadoEscolhido1);
@@ -44,6 +46,8 @@ int main() {
     printf("Area: %.2f km²\n", Area1);
     printf("PIB: R$ %.2f\n", PIB1);
     printf("Pontos turisticos: %d\n", PTUR1);
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidadePopulacional1);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita1);
      
     //carta 2
     // inserindo os itens a serem exibidos da carta 2, o usuario escolherá os valores
@@ -74,7 +78,9 @@ int main() {
 // o usuario digita o numero de pontos turisticos da cidade escolhida
     printf("Digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &PTUR2);
-// o programa imprimi/mostra as informaçoes fornecidas pelo usuario para a carta 2
+    float densidadePopulacional2 = habitantes2 / Area2; // calculando a densidade populacional
+    float pibPerCapita2 = PIB2 / habitantes2; // calculando o PIB per capita
+// o programa imprime/mostra as informaçoes fornecidas pelo usuario para a carta 2
     printf("\nCARTA 2\n");
     printf("Estado: %c\n", estadoEscolhido2);
     printf("Codigo do estado: %d %c\n", numero2, estadoEscolhido2);
@@ -83,6 +89,8 @@ int main() {
     printf("Area: %.2f km²\n", Area2);
     printf("PIB: R$ %.2f\n", PIB2);
     printf("Pontos turisticos: %d\n", PTUR2);
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidadePopulacional2);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
 
 return 0;
 } 
