@@ -99,25 +99,34 @@ int main() {
     printf("Densidade populacional: %.2f habitantes/km²\n", densidadePopulacional2);
     printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
 
-//comparação entre as cartas e exibição dos resultados, 
-//o programa compara as cartas e mostra qual carta venceu em cada categoria, 
-//o resultado é exibido como 1 para verdadeiro(vitoria da carta 1) e 0 para  falso(vitória da carta 2).
-   
-int Resultado1 = habitantes1 > habitantes2;
-    printf("\nHabitantes - Carta 1 venceu a Carta 2: %d\n", Resultado1);
-   int Resultado2 = Area1 > Area2;
-    printf("Area - Carta 1 venceu a Carta 2: %d\n", Resultado2);
-    int Resultado3 = PIB1 > PIB2;
-    printf("PIB - Carta 1 venceu a Carta 2: %d\n", Resultado3);
-    int Resultado4 = PTUR1 > PTUR2;
-    printf("Pontos turisticos - Carta 1 venceu a Carta 2: %d\n", Resultado4);
-    int Resultado5 = densidadePopulacional1 < densidadePopulacional2;
-    printf("Densidade populacional - Carta 1 venceu a Carta 2: %d\n", Resultado5);
-    int Resultado6 = pibPerCapita1 > pibPerCapita2;
-    printf("PIB per capita - Carta 1 venceu a Carta 2: %d\n", Resultado6);
-    int Resultado7 = SuperPoder1 > SuperPorder2;
-    printf("Super Poder - Carta 1 venceu a Carta 2: %d\n", Resultado7);
+// comparando as categorias das cartas e mostrando o vencedor de cada categoria usando if e else,
+// o jogador com o maior valor em cada categoria vence, exceto na categoria de densidade populacional, 
+// onde o jogador com o menor valor vence.
 
+if  (habitantes1 > habitantes2)
+    {printf ("\nHabitantes: Jogador 1 Venceu\n");}
+    else
+    {printf ("\nHabitantes: jogador 2 venceu\n");}
+if  (Area1 > Area2)
+    {printf ("Area: Jogador 1 Venceu\n");}
+    else
+    {printf ("Area: jogador 2 venceu\n");}
+if  (PIB1 > PIB2)
+    {printf ("PIB: Jogador 1 Venceu\n");}
+    else
+    {printf ("PIB: jogador 2 venceu\n");}
+if  (PTUR1 > PTUR2)
+    {printf ("Pontos turisticos: Jogador 1 Venceu\n");}
+    else
+    {printf ("Pontos turisticos:  jogador 2 venceu\n");}
+if  (densidadePopulacional1 < densidadePopulacional2)
+    {printf ("Densidade populacional: Jogador 1 Venceu\n");}
+    else
+    {printf ("Densidade populacional: jogador 2 venceu\n");}    
+if  (pibPerCapita1 > pibPerCapita2)
+    {printf ("PIB per capita: Jogador 1 Venceu\n");}
+    else    
+    {printf ("PIB per capita: jogador 2 venceu\n");}        
 
 return 0;
 } 
