@@ -52,6 +52,7 @@ int main() {
     printf("Pontos turisticos: %d\n", PTUR1);
     printf("Densidade populacional: %.2f habitantes/km²\n", densidadePopulacional1);
     printf("PIB per capita: R$ %.2f\n", pibPerCapita1);
+    printf("SuperPoder:%.2f\n",SuperPoder1);
      
     //carta 2
     // inserindo os itens a serem exibidos da carta 2, o usuario escolherá os valores
@@ -98,6 +99,7 @@ int main() {
     printf("Pontos turisticos: %d\n", PTUR2);
     printf("Densidade populacional: %.2f habitantes/km²\n", densidadePopulacional2);
     printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
+    printf("Super Poder: %.2f\n", SuperPorder2);
 
 // comparando as categorias das cartas e mostrando o vencedor de cada categoria usando if e else,
 // o jogador com o maior valor em cada categoria vence, exceto na categoria de densidade populacional, 
@@ -120,13 +122,17 @@ if  (PTUR1 > PTUR2)
     else
     {printf ("Pontos turisticos:  jogador 2 venceu\n");}
 if  (densidadePopulacional1 < densidadePopulacional2)
-    {printf ("Densidade populacional: Jogador 1 Venceu\n");}
+    {printf ("Densidade populacional: Jogador 1 Venceu!\n");}
     else
-    {printf ("Densidade populacional: jogador 2 venceu\n");}    
+    {printf ("Densidade populacional: jogador 2 venceu!\n");}    
 if  (pibPerCapita1 > pibPerCapita2)
-    {printf ("PIB per capita: Jogador 1 Venceu\n");}
+    {printf ("PIB per capita: Jogador 1 Venceu!\n");}
     else    
-    {printf ("PIB per capita: jogador 2 venceu\n");}        
-
+    {printf ("PIB per capita: jogador 2 venceu!\n");}
+if (SuperPoder1 > SuperPorder2)
+{printf("Super Poder: Jogador 1 venceu!\n");}
+    else
+    {printf("Super Poder: O jogador 2 venceu!\n");}
 return 0;
 } 
+
